@@ -1,19 +1,43 @@
 import Link from "next/link";
-import styles from "../styles/header.module.scss";
+import styled from "styled-components";
 
 const Header = () => {
   return (
-    <header className={styles.header}>
-      <h1 className={styles.title}>
+    <HeaderWrapper>
+      <h1 className="title">
         <Link href="/">
           <a>
-            <span className={styles["title--red"]}>Netflix</span>
-            <span className={styles["title--light-gray"]}>Virus</span>
+            <span className="title--red">Netflix</span>
+            <span className="title--lightgray">Virus</span>
           </a>
         </Link>
       </h1>
-    </header>
+    </HeaderWrapper>
   );
 };
+
+const HeaderWrapper = styled.header`
+  background-color: #222;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0.6rem 0 0.8rem;
+
+  height: 6vh;
+
+  .title {
+    font-size: 36px;
+
+    &--red {
+      color: #e50914;
+    }
+    &--lightgray {
+      color: #e2e2e2;
+    }
+  }
+`;
 
 export default Header;
