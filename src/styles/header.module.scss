@@ -12,9 +12,12 @@
 
   .title {
     font-size: 36px;
-  }
 
-  .red {
-    color: #e50914;
+    &--red {
+      color: #e50914;
+    }
+    &--light-gray {
+      color: #e2e2e2;
+    }
   }
 }

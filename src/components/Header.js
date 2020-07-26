@@ -7,8 +7,8 @@ const Header = () => {
       <h1 className={styles.title}>
         <Link href="/">
           <a>
-            <span className={styles.red}>Netflix</span>
-            <span>Virus</span>
+            <span className={styles["title--red"]}>Netflix</span>
+            <span className={styles["title--light-gray"]}>Virus</span>
           </a>
         </Link>
       </h1>
