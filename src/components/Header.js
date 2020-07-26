@@ -1,17 +1,17 @@
 import Link from "next/link";
+import styles from "../styles/header.module.scss";
 
 const Header = () => {
   return (
-    <header>
-      <h1>
+    <header className={styles.header}>
+      <h1 className={styles.title}>
         <Link href="/">
           <a>
-            <span>Netflix</span>
+            <span className={styles.red}>Netflix</span>
             <span>Virus</span>
           </a>
         </Link>
       </h1>
-      <p>React & Nextjs</p>
     </header>
   );
 };
