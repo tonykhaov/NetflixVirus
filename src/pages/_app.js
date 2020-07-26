@@ -1,3 +1,6 @@
+import "../styles/_normalize.scss";
+import "../styles/_globalStyles.scss";
+
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />;
 }
