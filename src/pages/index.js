@@ -1,7 +1,8 @@
 import Head from "next/head";
 
-import MoviesList from "../components/MoviesList";
 import Header from "../components/Header";
+import MoviesList from "../components/MoviesList";
+import Footer from "../components/Footer";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       </Head>
       <Header />
       <MoviesList />
+      <Footer />
     </div>
   );
 }
