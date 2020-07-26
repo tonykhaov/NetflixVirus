@@ -5,9 +5,13 @@ import Header from "../components/Header";
 
 export default function Home() {
   return (
-    <div className="container">
+    <div>
       <Head>
-        <title>Create Next App</title>
+        <title>NetflixVirus</title>
+        <link
+          rel="shortcut icon"
+          href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.ico"
+        />
       </Head>
       <Header />
       <MoviesList />
