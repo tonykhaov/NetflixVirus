@@ -1,4 +1,4 @@
-import "../styles/_normalize.scss";
+import "normalize.css";
 import "../styles/_globalStyles.scss";
 
 function MyApp({ Component, pageProps }) {
