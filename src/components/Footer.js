@@ -6,13 +6,28 @@ const Footer = () => {
     <FooterWrapper>
       <p className="social-message">We're also on social medias</p>
       <div className="social-media">
-        <a href="http://twitter.com/netflix" className="social-media--link" rel="noreferrer">
+        <a
+          href="http://twitter.com/netflix"
+          className="social-media--link"
+          rel="noreferrer noopener"
+          target="_blank"
+        >
           <FaTwitter />
         </a>
-        <a href="http://instagram.com/netflix" className="social-media--link" rel="noreferrer">
+        <a
+          href="http://instagram.com/netflix"
+          className="social-media--link"
+          rel="noreferrer noopener"
+          target="_blank"
+        >
           <FaInstagram />
         </a>
-        <a href="http://facebook.com/netflix" className="social-media--link" rel="noreferrer">
+        <a
+          href="http://facebook.com/netflix"
+          className="social-media--link"
+          rel="noreferrer noopener"
+          target="_blank"
+        >
           <FaFacebookF />
         </a>
       </div>
