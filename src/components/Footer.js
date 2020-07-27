@@ -29,7 +29,7 @@ const FooterWrapper = styled.footer`
   padding: 0.8rem 0 0.6rem;
 
   > * {
-    padding: 0.4rem 0 0.6rem;
+    padding: 0.3rem 0 0.4rem;
 
     &:last-child {
       padding: 0.4rem 0;
