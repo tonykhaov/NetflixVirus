@@ -1,10 +1,11 @@
 import styled from "styled-components";
 
-const MoviesList = ({ props }) => {
-  console.log(props);
+const MoviesList = ({ movies }) => {
   return (
     <MoviesListWrapper>
-      <h1>MoviesList</h1>
+      {movies.map((movie) => (
+        <h1>{movie.original_title}</h1>
+      ))}
     </MoviesListWrapper>
   );
 };
@@ -15,23 +16,11 @@ const MoviesListWrapper = styled.main`
 
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 
   @media (max-width: 640px) {
     padding: 12px 8px;
   }
 `;
-
-export async function getServerSideProps() {
-  const res = await fetch(
-    "https://api.themoviedb.org/3/discover/movie?api_key=eb1340ed9b9e6d049cad9a073a4a431b&language=en-EN&sort_by=vote_count.desc&include_adult=false&include_video=false&page=1"
-  );
-  const data = await res.json();
-
-  return {
-    props: {
-      data,
-    },
-  };
-}
 
 export default MoviesList;
