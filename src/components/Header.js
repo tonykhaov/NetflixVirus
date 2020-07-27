@@ -31,10 +31,10 @@ const HeaderWrapper = styled.header`
   .title {
     font-size: 36px;
 
-    &--red {
+    .title--red {
       color: #e50914;
     }
-    &--lightgray {
+    .title--lightgray {
       color: #e2e2e2;
     }
   }
