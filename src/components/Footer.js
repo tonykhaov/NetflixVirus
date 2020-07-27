@@ -6,13 +6,13 @@ const Footer = () => {
     <FooterWrapper>
       <p className="social-message">We're also on social medias</p>
       <div className="social-media">
-        <a href="http://twitter.com/netflix" class="social-media--link" rel="noreferrer">
+        <a href="http://twitter.com/netflix" className="social-media--link" rel="noreferrer">
           <FaTwitter />
         </a>
-        <a href="http://instagram.com/netflix" class="social-media--link" rel="noreferrer">
+        <a href="http://instagram.com/netflix" className="social-media--link" rel="noreferrer">
           <FaInstagram />
         </a>
-        <a href="http://facebook.com/netflix" class="social-media--link" rel="noreferrer">
+        <a href="http://facebook.com/netflix" className="social-media--link" rel="noreferrer">
           <FaFacebookF />
         </a>
       </div>
@@ -26,7 +26,15 @@ const FooterWrapper = styled.footer`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0.6rem 0 0.8rem;
+  padding: 0.8rem 0 0.6rem;
+
+  > * {
+    padding: 0.4rem 0 0.6rem;
+
+    &:last-child {
+      padding: 0.4rem 0;
+    }
+  }
 
   .social-message {
     color: grey;
