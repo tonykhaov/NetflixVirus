@@ -12,6 +12,9 @@ const MoviesListWrapper = styled.main`
   min-height: 90vh;
   padding: 24px 32px;
 
+  display: flex;
+  flex-wrap: wrap;
+
   @media (max-width: 640px) {
     padding: 12px 8px;
   }
