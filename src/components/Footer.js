@@ -1,13 +1,20 @@
 import styled from "styled-components";
+import { FaTwitter, FaInstagram, FaFacebookF } from "react-icons/fa";
 
 const Footer = () => {
   return (
     <FooterWrapper>
       <p className="social-message">We're also on social medias</p>
-      <div className="social-medias">
-        <a href="http://twitter.com/netflix">Twitter</a>
-        <a href="http://instagram.com/netflix">Instagram</a>
-        <a href="http://facebook.com/netflix">Facebook</a>
+      <div className="social-media">
+        <a href="http://twitter.com/netflix" class="social-media--link" rel="noreferrer">
+          <FaTwitter />
+        </a>
+        <a href="http://instagram.com/netflix" class="social-media--link" rel="noreferrer">
+          <FaInstagram />
+        </a>
+        <a href="http://facebook.com/netflix" class="social-media--link" rel="noreferrer">
+          <FaFacebookF />
+        </a>
       </div>
     </FooterWrapper>
   );
@@ -25,18 +32,20 @@ const FooterWrapper = styled.footer`
     color: grey;
   }
 
-  .social-medias {
+  .social-media {
     display: flex;
     justify-content: space-around;
-    background: red;
     align-items: center;
     width: 100%;
-    max-width: 720px;
-  }
+    max-width: 256px;
 
-  @media (min-width: 720px) {
-    .social-medias {
-      width: 720px;
+    .social-media--link {
+      color: white;
+      font-size: 24px;
+
+      &:hover {
+        color: gray;
+      }
     }
   }
 `;
