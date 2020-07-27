@@ -1,5 +1,1 @@
-module.exports = {
-  devIndicators: {
-    autoPrerender: false,
-  },
-};
+module.exports = {};
