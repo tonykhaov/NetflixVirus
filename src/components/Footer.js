@@ -15,7 +15,7 @@ const Footer = () => {
           rel="noreferrer noopener"
           target="_blank"
         >
-          <FaTwitter />
+          <FaTwitter data-testid="twitter-icon" />
         </a>
         <a
           href="https://instagram.com/netflix"
@@ -24,7 +24,7 @@ const Footer = () => {
           rel="noreferrer noopener"
           target="_blank"
         >
-          <FaInstagram />
+          <FaInstagram data-testid="instagram-icon" />
         </a>
         <a
           href="https://facebook.com/netflix"
@@ -33,7 +33,7 @@ const Footer = () => {
           rel="noreferrer noopener"
           target="_blank"
         >
-          <FaFacebookF />
+          <FaFacebookF data-testid="facebook-icon" />
         </a>
       </div>
     </FooterWrapper>
