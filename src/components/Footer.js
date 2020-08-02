@@ -4,9 +4,7 @@ import { FaTwitter, FaInstagram, FaFacebookF } from "react-icons/fa";
 const Footer = () => {
   return (
     <FooterWrapper>
-      <p className="social-message" data-testid="social-message">
-        We're also on social medias
-      </p>
+      <p className="social-message">We're also on social medias</p>
       <div className="social-media">
         <a
           href="https://twitter.com/netflix"

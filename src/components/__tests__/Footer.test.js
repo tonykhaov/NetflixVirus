@@ -8,7 +8,7 @@ describe("<Footer/>", function () {
   });
 
   test("Message is We're also on social medias?", () => {
-    expect(screen.getByTestId("social-message")).toHaveTextContent("We're also on social medias");
+    expect(screen.getByText(/We're also on social medias/i)).toBeInTheDocument();
   });
 
   test("Icons in the document?", () => {
