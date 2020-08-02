@@ -9,7 +9,7 @@ const Footer = () => {
       </p>
       <div className="social-media">
         <a
-          href="http://twitter.com/netflix"
+          href="https://twitter.com/netflix"
           className="social-media--link"
           data-testid="social-media--link__twitter"
           rel="noreferrer noopener"
@@ -18,7 +18,7 @@ const Footer = () => {
           <FaTwitter />
         </a>
         <a
-          href="http://instagram.com/netflix"
+          href="https://instagram.com/netflix"
           className="social-media--link"
           data-testid="social-media--link__instagram"
           rel="noreferrer noopener"
@@ -27,7 +27,7 @@ const Footer = () => {
           <FaInstagram />
         </a>
         <a
-          href="http://facebook.com/netflix"
+          href="https://facebook.com/netflix"
           className="social-media--link"
           data-testid="social-media--link__facebook"
           rel="noreferrer noopener"
