@@ -4,13 +4,14 @@ import { FaTwitter, FaInstagram, FaFacebookF } from "react-icons/fa";
 const Footer = () => {
   return (
     <FooterWrapper>
-      <p data-testid="social-message" className="social-message">
+      <p className="social-message" data-testid="social-message">
         We're also on social medias
       </p>
       <div className="social-media">
         <a
           href="http://twitter.com/netflix"
           className="social-media--link"
+          data-testid="social-media--link__twitter"
           rel="noreferrer noopener"
           target="_blank"
         >
@@ -19,6 +20,7 @@ const Footer = () => {
         <a
           href="http://instagram.com/netflix"
           className="social-media--link"
+          data-testid="social-media--link__instagram"
           rel="noreferrer noopener"
           target="_blank"
         >
@@ -27,6 +29,7 @@ const Footer = () => {
         <a
           href="http://facebook.com/netflix"
           className="social-media--link"
+          data-testid="social-media--link__facebook"
           rel="noreferrer noopener"
           target="_blank"
         >
