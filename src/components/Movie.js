@@ -13,6 +13,7 @@ function Movie({ movie }) {
 
 export const Img = styled.img`
   box-shadow: 0 0 12px black;
+  cursor: pointer;
   &:hover,
   &:focus {
     box-shadow: 0 0 3px black;
