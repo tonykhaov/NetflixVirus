@@ -5,7 +5,7 @@ const MoviesList = ({ movies }) => {
   return (
     <MoviesListWrapper>
       {movies.map((movie) => (
-        <Movie movie={movie} key={movie.id}/>
+        <Movie movie={movie} key={movie.id} />
       ))}
     </MoviesListWrapper>
   );
@@ -15,10 +15,10 @@ const MoviesListWrapper = styled.main`
   min-height: 90vh;
   padding: 24px 32px;
 
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(185px, 1fr));
+  justify-items: center;
+  grid-gap: 16px 12px;
   @media (max-width: 640px) {
     padding: 12px 8px;
   }
