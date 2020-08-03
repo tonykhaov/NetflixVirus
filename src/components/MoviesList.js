@@ -1,10 +1,11 @@
 import styled from "styled-components";
+import Movie from "./Movie";
 
 const MoviesList = ({ movies }) => {
   return (
     <MoviesListWrapper>
       {movies.map((movie) => (
-        <h1>{movie.original_title}</h1>
+        <Movie movie={movie} key={movie.id}/>
       ))}
     </MoviesListWrapper>
   );
