@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import Head from "next/head";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import { ImgStyled } from "../../components/Movie";
@@ -10,6 +10,13 @@ const BACKDROP_PATH = "https://image.tmdb.org/t/p/w1280/";
 const MovieDetails = ({ movie }) => {
   return (
     <>
+      <Head>
+        <title>NetflixVirus - {movie.title}</title>
+        <link
+          rel="shortcut icon"
+          href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.ico"
+        />
+      </Head>
       <Header />
       <MovieWrapper backdrop={`${BACKDROP_PATH}${movie.backdrop_path}`}>
         <MovieInfo>
@@ -44,7 +51,7 @@ export async function getServerSideProps(context) {
 
 const MovieWrapper = styled.div`
   position: relative;
-  min-height: 50vh;
+  min-height: 40vh;
   padding-top: 50vh;
   background: url(${(props) => props.backdrop}) no-repeat;
   background-size: cover;
@@ -72,10 +79,9 @@ const MovieWrapper = styled.div`
 const MovieInfo = styled.div`
   background-color: white;
   position: absolute;
-  min-height: 30vh;
   bottom: 0;
   text-align: left;
-  padding: 2rem 10%;
+  padding: 1rem 10%;
   display: grid;
   grid-template-columns: 185px 1fr;
   > div {
