@@ -8,7 +8,6 @@ const IMG_PATH = "https://image.tmdb.org/t/p/w185/";
 const BACKDROP_PATH = "https://image.tmdb.org/t/p/w1280/";
 
 const MovieDetails = ({ movie }) => {
-  console.log(`${BACKDROP_PATH}${movie.backdrop_path}`);
   return (
     <>
       <Header />
