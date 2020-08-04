@@ -4,11 +4,11 @@ import Footer from "../components/Footer";
 
 function Home({ movies }) {
   return (
-    <div>
+    <>
       <Header />
       <MoviesList movies={movies} />
       <Footer />
-    </div>
+    </>
   );
 }
 
