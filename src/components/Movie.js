@@ -4,7 +4,9 @@ import styled from "styled-components";
 function Movie({ movie }) {
   return (
     <Link href={`/movie/${movie.id}`} as={`/movie/${movie.id}`}>
-      <ImgStyled src={`${IMG_PATH}${movie.poster_path}`} alt={movie.title} />
+      <a>
+        <ImgStyled src={`${IMG_PATH}${movie.poster_path}`} alt={movie.title} />
+      </a>
     </Link>
   );
 }
