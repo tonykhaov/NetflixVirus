@@ -14,12 +14,12 @@ function Movie({ movie }) {
 const IMG_PATH = "http://image.tmdb.org/t/p/w185/";
 
 export const ImgStyled = styled.img`
-  box-shadow: 0 0 6px black;
+  box-shadow: 0 0 3px black;
   cursor: pointer;
-  transition: box-shadow 0.1s linear;
+  transition: transform 0.4s cubic-bezier(0.13, 0.47, 0.61, 0.88);
   &:hover,
   &:focus {
-    box-shadow: 0 0 3px black;
+    transform: translate(-2px, -6px);
   }
 `;
 
