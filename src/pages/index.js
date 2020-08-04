@@ -1,5 +1,3 @@
-import Head from "next/head";
-
 import Header from "../components/Header";
 import MoviesList from "../components/MoviesList";
 import Footer from "../components/Footer";
@@ -7,13 +5,6 @@ import Footer from "../components/Footer";
 function Home({ movies }) {
   return (
     <div>
-      <Head>
-        <title>NetflixVirus</title>
-        <link
-          rel="shortcut icon"
-          href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.ico"
-        />
-      </Head>
       <Header />
       <MoviesList movies={movies} />
       <Footer />

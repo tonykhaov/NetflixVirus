@@ -12,10 +12,6 @@ const MovieDetails = ({ movie }) => {
     <>
       <Head>
         <title>NetflixVirus - {movie.title}</title>
-        <link
-          rel="shortcut icon"
-          href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.ico"
-        />
       </Head>
       <Header />
       <MovieWrapper backdrop={`${BACKDROP_PATH}${movie.backdrop_path}`}>
