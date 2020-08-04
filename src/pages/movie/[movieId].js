@@ -39,7 +39,7 @@ export default MovieDetails;
 
 export async function getServerSideProps(context) {
   const res = await fetch(
-    `https://api.themoviedb.org/3/movie/${context.params.id}?api_key=eb1340ed9b9e6d049cad9a073a4a431b&language=en-EN`
+    `https://api.themoviedb.org/3/movie/${context.params.movieId}?api_key=eb1340ed9b9e6d049cad9a073a4a431b&language=en-EN`
   );
   const data = await res.json();
   return {
