@@ -1,8 +1,6 @@
 import Link from "next/link";
 import styled from "styled-components";
 
-const IMG_PATH = "http://image.tmdb.org/t/p/w185/";
-
 function Movie({ movie }) {
   return (
     <Link href={`/movie/${movie.id}`} as={`/movie/${movie.id}`}>
@@ -10,6 +8,8 @@ function Movie({ movie }) {
     </Link>
   );
 }
+
+const IMG_PATH = "http://image.tmdb.org/t/p/w185/";
 
 export const ImgStyled = styled.img`
   box-shadow: 0 0 6px black;

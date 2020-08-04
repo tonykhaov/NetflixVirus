@@ -4,9 +4,6 @@ import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import { ImgStyled } from "../../components/Movie";
 
-const IMG_PATH = "https://image.tmdb.org/t/p/w185/";
-const BACKDROP_PATH = "https://image.tmdb.org/t/p/w1280/";
-
 const MovieDetails = ({ movie }) => {
   return (
     <>
@@ -30,6 +27,9 @@ const MovieDetails = ({ movie }) => {
     </>
   );
 };
+
+const IMG_PATH = "https://image.tmdb.org/t/p/w185/";
+const BACKDROP_PATH = "https://image.tmdb.org/t/p/w1280/";
 
 export default MovieDetails;
 
