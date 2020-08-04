@@ -47,28 +47,15 @@ export async function getServerSideProps(context) {
 
 const MovieWrapper = styled.div`
   position: relative;
-  min-height: 40vh;
-  padding-top: 50vh;
+  min-height: 400px;
+  padding-top: 400px;
   background: url(${(props) => props.backdrop}) no-repeat;
   background-size: cover;
   background-position: 50% 50%;
-  svg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    fill: white;
-    margin: 24px 0 0 96px;
-    background-color: rgba(0, 0, 0, 0.4);
-  }
-  svg:hover {
-    fill: #f3f3f3;
-  }
+
   @media (max-width: 1024px) {
-    padding-top: 30vh;
-    min-height: 70vh;
-    svg {
-      margin: 16px 0 0 48px;
-    }
+    padding-top: 256px;
+    min-height: 640px;
   }
 `;
 
@@ -77,7 +64,7 @@ const MovieInfo = styled.div`
   position: absolute;
   bottom: 0;
   text-align: left;
-  padding: 1rem 10%;
+  padding: 1rem 48px;
   display: grid;
   grid-template-columns: 185px 1fr;
   > div {
@@ -106,7 +93,7 @@ const MovieInfo = styled.div`
 
 const Vote = styled.p`
   font-size: 18px;
-  margin: 6px 0;
+  margin: 8px 0;
   @media (max-width: 1024px) {
     font-size: 16px;
   }

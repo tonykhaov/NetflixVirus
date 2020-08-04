@@ -12,7 +12,7 @@ const MoviesList = ({ movies }) => {
 };
 
 const MoviesListWrapper = styled.main`
-  min-height: 90vh;
+  min-height: 800px;
   padding: 24px 32px;
 
   display: grid;

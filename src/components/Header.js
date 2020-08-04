@@ -26,7 +26,7 @@ const HeaderWrapper = styled.header`
 
   padding: 0.6rem 0 0.8rem;
 
-  height: 6vh;
+  height: 40px;
 
   .title {
     font-size: 36px;
