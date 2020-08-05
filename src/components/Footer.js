@@ -70,7 +70,7 @@ const FooterWrapper = styled.footer`
 
     .social-media--link {
       color: white;
-      font-size: 24px;
+      font-size: 18px;
 
       &:hover {
         color: gray;
