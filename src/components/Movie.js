@@ -11,7 +11,7 @@ function Movie({ movie }) {
   );
 }
 
-const IMG_PATH = "http://image.tmdb.org/t/p/w185/";
+const IMG_PATH = "https://image.tmdb.org/t/p/w185/";
 
 export const ImgStyled = styled.img`
   box-shadow: 0 0 3px black;
