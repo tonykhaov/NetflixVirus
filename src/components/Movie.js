@@ -5,7 +5,11 @@ function Movie({ movie }) {
   return (
     <Link href={`/movie/${movie.id}`} as={`/movie/${movie.id}`}>
       <a>
-        <ImgStyled src={`${IMG_PATH}${movie.poster_path}`} alt={movie.title} />
+        <ImgStyled
+          src={`${IMG_PATH}${movie.poster_path}`}
+          alt={movie.title}
+          onTouchStart={(e) => e.target.focus()}
+        />
       </a>
     </Link>
   );
