@@ -9,6 +9,7 @@ function Movie({ movie }) {
           src={`${IMG_PATH}${movie.poster_path}`}
           alt={movie.title}
           onTouchStart={(e) => e.target.focus()}
+          loading="lazy"
         />
       </a>
     </Link>
