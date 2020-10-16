@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <HeaderWrapper>
       <h1 className="title">
-        <Link href="/" as="/">
+        <Link href="/">
           <a>
             <span className="title--red">Netflix</span>
             <span className="title--lightgray">Virus</span>

@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 function Movie({ movie }) {
   return (
-    <Link href={`/movie/${movie.id}`} as={`/movie/${movie.id}`}>
+    <Link href={`/movie/${movie.id}`}>
       <a>
         <ImgStyled
           src={`${IMG_PATH}${movie.poster_path}`}
