@@ -14,7 +14,10 @@ const MovieDetails = ({ movie }) => {
       <MovieWrapper backdrop={`${BACKDROP_PATH}${movie.backdrop_path}`}>
         <MovieInfo>
           <span>
-            <ImgStyled src={`${IMG_PATH}${movie.poster_path}`} alt={movie.title} />
+            <ImgStyled
+              src={`${IMG_PATH}${movie.poster_path}`}
+              alt={movie.title}
+            />
           </span>
           <div>
             <h1>{movie.title}</h1>
@@ -33,7 +36,21 @@ const BACKDROP_PATH = "https://image.tmdb.org/t/p/w1280/";
 
 export default MovieDetails;
 
-export async function getServerSideProps(context) {
+export async function getStaticPaths() {
+  const res = await fetch(
+    "https://api.themoviedb.org/3/discover/movie?api_key=eb1340ed9b9e6d049cad9a073a4a431b&language=en-EN&sort_by=vote_count.desc&include_adult=false&include_video=false&page=1"
+  );
+  const data = await res.json();
+  const paths = data.results.map((movie) => ({
+    params: { movieId: String(movie.id) },
+  }));
+  return {
+    paths,
+    fallback: false,
+  };
+}
+
+export async function getStaticProps(context) {
   const res = await fetch(
     `https://api.themoviedb.org/3/movie/${context.params.movieId}?api_key=eb1340ed9b9e6d049cad9a073a4a431b&language=en-EN`
   );
