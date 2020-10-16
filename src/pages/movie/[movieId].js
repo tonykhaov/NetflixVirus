@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Link from "next/link";
 import Head from "next/head";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
@@ -14,10 +15,14 @@ const MovieDetails = ({ movie }) => {
       <MovieWrapper backdrop={`${BACKDROP_PATH}${movie.backdrop_path}`}>
         <MovieInfo>
           <span>
-            <ImgStyled
-              src={`${IMG_PATH}${movie.poster_path}`}
-              alt={movie.title}
-            />
+            <Link href="/">
+              <a>
+                <ImgStyled
+                  src={`${IMG_PATH}${movie.poster_path}`}
+                  alt={movie.title}
+                />
+              </a>
+            </Link>
           </span>
           <div>
             <h1>{movie.title}</h1>
