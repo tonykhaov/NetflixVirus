@@ -85,6 +85,8 @@ const MovieInfo = styled.div`
   background-color: white;
   position: absolute;
   bottom: 0;
+  left: 0;
+  right: 0;
   text-align: left;
   padding: 1rem 48px;
   display: grid;
