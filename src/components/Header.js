@@ -18,15 +18,17 @@ const Header = () => {
 
 const HeaderWrapper = styled.header`
   background-color: #222;
-
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
   padding: 0.6rem 0 0.8rem;
-
-  height: 40px;
+  height: 48px;
 
   .title {
     font-size: 36px;
