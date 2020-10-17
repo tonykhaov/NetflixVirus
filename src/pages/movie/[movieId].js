@@ -1,8 +1,6 @@
 import styled from "styled-components";
 import Link from "next/link";
 import Head from "next/head";
-import Header from "../../components/Header";
-import Footer from "../../components/Footer";
 import { ImgStyled } from "../../components/Movie";
 import { getMovies } from "../../utils/utils";
 
@@ -12,7 +10,6 @@ const MovieDetails = ({ movie }) => {
       <Head>
         <title>NetflixVirus - {movie.title}</title>
       </Head>
-      <Header />
       <MovieWrapper backdrop={`${BACKDROP_PATH}${movie.backdrop_path}`}>
         <MovieInfo>
           <span>
@@ -32,7 +29,6 @@ const MovieDetails = ({ movie }) => {
           </div>
         </MovieInfo>
       </MovieWrapper>
-      <Footer />
     </>
   );
 };

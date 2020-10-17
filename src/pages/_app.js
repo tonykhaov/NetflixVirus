@@ -1,5 +1,7 @@
 import Head from "next/head";
 import Router from "next/router";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 import NProgress from "nprogress";
 import "nprogress/nprogress.css";
 import "normalize.css";
@@ -19,7 +21,9 @@ function MyApp({ Component, pageProps }) {
           href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.ico"
         />
       </Head>
+      <Header />
       <Component {...pageProps} />
+      <Footer />
     </>
   );
 }
