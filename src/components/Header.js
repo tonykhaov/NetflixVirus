@@ -24,6 +24,9 @@ const HeaderWrapper = styled.header`
   right: 0;
   z-index: 999;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 0.6rem 0 0.8rem;
   height: 48px;
 
