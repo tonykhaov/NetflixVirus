@@ -16,7 +16,7 @@
     "next": "^9.5.5",
     "normalize.css": "^8.0.1",
     "nprogress": "^0.2.0",
-    "react": "0.0.0-experimental-4ead6b530",
+    "react": "0.14.0",
     "react-dom": "0.0.0-experimental-4ead6b530",
     "react-icons": "^3.11.0",
     "react-spring": "^8.0.27",
