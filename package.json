@@ -13,11 +13,11 @@
     "cy:open": "cypress open"
   },
   "dependencies": {
-    "next": "^9.5.5",
+    "next": "^10.0.0",
     "normalize.css": "^8.0.1",
     "nprogress": "^0.2.0",
-    "react": "0.0.0-experimental-4ead6b530",
-    "react-dom": "0.0.0-experimental-4ead6b530",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
     "react-icons": "^3.11.0",
     "react-spring": "^8.0.27",
     "sass": "^1.27.0",
