@@ -3,7 +3,7 @@ export default [
     name: "Patrice Leconte",
     comment: "Que du bonheur ce n'est que du bonheur.",
     review: "Note : 5,0 sur 5",
-    date: "il y a 3 jours",
+    date: "il y a une semaine",
     photoUrl:
       "https://lh3.googleusercontent.com/a-/AOh14Gg-T3aliZ5HbxLAg_SAKussQANTGRSiHe8hnp31AQ=s40-c0x00000000-cc-rp",
   },
@@ -12,7 +12,7 @@ export default [
     comment:
       "Nous avons été agréablement surpris par cette pizzeria ! Les 2 gérants sont très sympathiques, les produits sont frais, la pâte est faite maison. Que dire de plus... Allez y les yeux fermés. 🍕",
     review: "Note : 5,0 sur 5",
-    date: "il y a 2 semaines",
+    date: "il y a 3 semaines",
     photoUrl:
       "https://lh3.googleusercontent.com/a-/AOh14GhQ-lGvChZ4lR5tO4P0iEkiThS2yEm997a6gXL9fA=s40-c0x00000000-cc-rp-ba3",
   },
@@ -80,7 +80,7 @@ export default [
     comment:
       "Pizza délicieuses, accueil chaleureux... Moi qui vient d'emménager dans Plaisir Village, je me réjouis à l'idée d'y revenir régulièrement :)",
     review: "Note : 5,0 sur 5",
-    date: "il y a 2 mois",
+    date: "il y a 3 mois",
     photoUrl:
       "https://lh3.googleusercontent.com/-8HJFCa_D7gE/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucl62MlVUyUdZj-reZ4uFax3ELSFUA/s40-c0x00000000-cc-rp/photo.jpg",
   },
@@ -89,7 +89,7 @@ export default [
     comment:
       "Difficile de manger d’autres pizzas après celles de pizza duo. Les ingrédients sont choisis et toujours mis à l’honneur : résultat les pizzas sont délicieuses. Et en bonus l’accueil chaleureux que nous réserves à chaque fois les propriétaires. Bref, ne passez pas à côté !",
     review: "Note : 5,0 sur 5",
-    date: "il y a 2 mois",
+    date: "il y a 3 mois",
     photoUrl:
       "https://lh6.googleusercontent.com/-ppfjophBuoE/AAAAAAAAAAI/AAAAAAAAAAA/AMZuuckPgZ9KHk6w1rK_L8lwdJvbDx2ZBg/s40-c0x00000000-cc-rp-ba3/photo.jpg",
   },
@@ -114,7 +114,7 @@ export default [
     name: "Chris 78",
     comment: "Accueil et pizza superbe ! Je reviendrai c'est sûr",
     review: "Note : 5,0 sur 5",
-    date: "il y a 4 mois",
+    date: "il y a 5 mois",
     photoUrl:
       "https://lh3.googleusercontent.com/a-/AOh14GibTQQ99GcT-KZEryIx4PsKWDcuY15Y7NTPjheSMyE=s40-c0x00000000-cc-rp-ba4",
   },
@@ -166,7 +166,7 @@ export default [
     name: "Nicolas Davaille",
     comment: "",
     review: "Note : 5,0 sur 5",
-    date: "il y a 8 mois",
+    date: "il y a 9 mois",
     photoUrl:
       "https://lh5.googleusercontent.com/-mr5qkE-HamA/AAAAAAAAAAI/AAAAAAAAAAA/AMZuuclAE0EefQw_JkC8nBpsrwgvv_O77w/s40-c0x00000000-cc-rp/photo.jpg",
   },
@@ -190,7 +190,7 @@ export default [
     name: "Youce 81",
     comment: "",
     review: "Note : 5,0 sur 5",
-    date: "il y a 9 mois",
+    date: "il y a 10 mois",
     photoUrl:
       "https://lh5.googleusercontent.com/-_5yYOJGmlpM/AAAAAAAAAAI/AAAAAAAAAAA/AMZuuckK9c7cjurDZdAruTk_AVIS4mIR-g/s40-c0x00000000-cc-rp/photo.jpg",
   },
@@ -198,7 +198,7 @@ export default [
     name: "Florent Valette",
     comment: "",
     review: "Note : 5,0 sur 5",
-    date: "il y a 9 mois",
+    date: "il y a 10 mois",
     photoUrl:
       "https://lh5.googleusercontent.com/-9mJ7en4qJoM/AAAAAAAAAAI/AAAAAAAAAAA/AMZuuck1aG7Hk1xlZ_VuZo_B3DWyl6wIcQ/s40-c0x00000000-cc-rp-ba2/photo.jpg",
   },
@@ -824,7 +824,7 @@ export default [
     name: "marc",
     comment: "Excellent produits, les meilleurs pizzas de la region",
     review: "Note : 5,0 sur 5",
-    date: "il y a 2 ans",
+    date: "il y a 3 ans",
     photoUrl:
       "https://lh5.googleusercontent.com/-3w9F34pF5_k/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucnszwXIz6NQkGyTkBoRHRMdQCx5Kw/s40-c0x00000000-cc-rp-ba3/photo.jpg",
   },
@@ -832,7 +832,7 @@ export default [
     name: "alan m",
     comment: "",
     review: "Note : 4,0 sur 5",
-    date: "il y a 2 ans",
+    date: "il y a 3 ans",
     photoUrl:
       "https://lh3.googleusercontent.com/a-/AOh14GhyAwJ_Dce6y0rh-Qnw7Z6r3CCcznRzKSeQEzCZ=s40-c0x00000000-cc-rp",
   },
