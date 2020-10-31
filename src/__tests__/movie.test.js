@@ -1,5 +1,3 @@
-import "@testing-library/jest-dom/extend-expect";
-
 import { render, screen } from "@testing-library/react";
 import { movieBuilder } from "../tests/builders";
 import MovieDetails, { IMG_PATH } from "../pages/movie/[movieId]";

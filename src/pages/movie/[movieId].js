@@ -33,7 +33,7 @@ const MovieDetails = ({ movie }) => {
   );
 };
 
-const IMG_PATH = "https://image.tmdb.org/t/p/w185/";
+export const IMG_PATH = "https://image.tmdb.org/t/p/w185/";
 const BACKDROP_PATH = "https://image.tmdb.org/t/p/w1280/";
 
 export default MovieDetails;
