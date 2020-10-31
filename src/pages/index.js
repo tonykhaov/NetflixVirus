@@ -14,7 +14,6 @@ function Home({ movies }) {
 
 export async function getStaticProps() {
   const movies = await getMovies();
-
   return {
     props: {
       movies,
