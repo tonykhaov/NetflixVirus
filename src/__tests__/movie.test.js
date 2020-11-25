@@ -8,11 +8,13 @@ test("Renders Movie Details with correct datas", () => {
   render(<MovieDetails movie={movie} />);
 
   expect(screen.getByText(movie.title)).toBeInTheDocument();
-  expect(screen.getByAltText(movie.title)).toHaveAttribute("src", posterImgSrc);
-  expect(screen.getByAltText(movie.title).parentElement).toHaveAttribute(
-    "href",
-    "/"
+  expect(screen.getByRole("img", { name: movie.title })).toHaveAttribute(
+    "src",
+    posterImgSrc
   );
+  expect(
+    screen.getByRole("img", { name: movie.title }).parentElement
+  ).toHaveAttribute("href", "/");
   expect(screen.getByText(movie.overview)).toBeInTheDocument();
   expect(screen.getByText(`${movie.vote_average}/10`)).toBeInTheDocument();
 });
