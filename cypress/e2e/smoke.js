@@ -8,8 +8,8 @@ describe("NetflixVirus", () => {
     cy.visit("/");
     cy.findByAltText(/avatar/i).click();
     cy.url().should("eq", "http://localhost:3000/movie/19995");
-    cy.findByRole("heading", /avatar/i);
-    cy.findByRole("heading", /netflixvirus/i).click();
+    cy.findByRole("heading", { name: /avatar/i });
+    cy.findByRole("heading", { name: /netflixvirus/i }).click();
     cy.url().should("eq", "http://localhost:3000/");
   });
 });
